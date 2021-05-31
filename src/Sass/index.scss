@@ -1,0 +1,161 @@
+@import 'mixin';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: wheat;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+.chosen{
+  background-color: #FF8A05;
+  box-shadow: 15px 7px 38px -3px #714009;
+}
+.app{
+  @include AppGrid
+}
+
+
+.middle{
+  @include LineGrid
+}
+
+.front{
+  @include LineGrid
+}
+
+.BackSeats{
+  @include seats;
+  button {
+    @include oneSeat
+  }
+}
+
+.MiddleLeft{
+  @include seatsparts;
+  button {
+    @include oneSeat
+  }
+}
+
+.MiddleRight{
+  @include seatsparts;
+  h1 {
+    @include oneSeat
+    
+  }
+  button {
+    @include oneSeat;
+  }
+}
+
+.FrontLeft{
+  @include seatsparts;
+  button {
+    @include oneSeat
+  }
+}
+
+.FrontRight{
+  @include seatsparts;
+  button {
+    @include oneSeat
+  }
+}
+
+// .app{
+//   border: black solid 2px;
+//   padding: 50px;
+//   margin-bottom: -6rem;
+//   border-radius: 15px;
+// }
+
+.options{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: -50px;
+  width: 92%;
+  border: none;
+  span{
+   position: relative;
+   bottom: 15px;
+   right: -5px;
+    font-weight: 700;
+  }
+  .confirm{
+    width: 240px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .twoj{
+    background-color: #FF8A05;
+    width: 50px;
+    height: 50px;
+    border: none;
+  }
+  .Miejsca{
+    background-color: #474747;
+    width: 50px;
+    height: 50px;
+    border: none;
+  }
+  .Dostpne{
+    // background-color: #EFEFEF;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    border: solid black 1px;
+  }
+}
+
+.welcome {
+  margin: 15rem auto;
+  width: fit-content;
+  text-align: center;
+
+  .entry{
+    margin-right: 2rem;
+  }
+  .chair{
+    padding: 27px 27px;
+  }
+  
+  .questionare{
+    display: flex;
+    flex-direction: row-reverse;
+    p{
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+  .btnConf{
+    margin-top: 5%;
+    .btnConff{
+      padding: 15px;
+      width: 95%;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+  }
+}
+
+ .Mui-required{
+  font-size: 0.9rem !important;
+    color: #3F51B5 !important;
+    font-weight: 700 !important;
+}
+
+.result{
+  text-align: center;
+  .cho{
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: green;
+  }
+}

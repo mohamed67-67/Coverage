@@ -1,0 +1,207 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: wheat;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.chosen {
+  background-color: #FF8A05;
+  box-shadow: 15px 7px 38px -3px #714009;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'BACK MIDL FRONTL' 'BACK MIDR FRONTR';
+  grid-gap: 4rem;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BackSeats {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+.BackSeats button {
+  width: 50px;
+  height: 50px;
+  border: .5px solid black;
+  margin: 5px;
+}
+
+.MiddleLeft {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 250px;
+}
+
+.MiddleLeft button {
+  width: 50px;
+  height: 50px;
+  border: .5px solid black;
+  margin: 5px;
+}
+
+.MiddleRight {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 250px;
+}
+
+.MiddleRight h1 {
+  width: 50px;
+  height: 50px;
+  border: .5px solid black;
+  margin: 5px;
+}
+
+.MiddleRight button {
+  width: 50px;
+  height: 50px;
+  border: .5px solid black;
+  margin: 5px;
+}
+
+.FrontLeft {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 250px;
+}
+
+.FrontLeft button {
+  width: 50px;
+  height: 50px;
+  border: .5px solid black;
+  margin: 5px;
+}
+
+.FrontRight {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 250px;
+}
+
+.FrontRight button {
+  width: 50px;
+  height: 50px;
+  border: .5px solid black;
+  margin: 5px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: -50px;
+  width: 92%;
+  border: none;
+}
+
+.options span {
+  position: relative;
+  bottom: 15px;
+  right: -5px;
+  font-weight: 700;
+}
+
+.options .confirm {
+  width: 240px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.options .twoj {
+  background-color: #FF8A05;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.options .Miejsca {
+  background-color: #474747;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.options .Dostpne {
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  border: solid black 1px;
+}
+
+.welcome {
+  margin: 15rem auto;
+  width: fit-content;
+  text-align: center;
+}
+
+.welcome .entry {
+  margin-right: 2rem;
+}
+
+.welcome .chair {
+  padding: 27px 27px;
+}
+
+.welcome .questionare {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.welcome .questionare p {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.welcome .btnConf {
+  margin-top: 5%;
+}
+
+.welcome .btnConf .btnConff {
+  padding: 15px;
+  width: 95%;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.Mui-required {
+  font-size: 0.9rem !important;
+  color: #3F51B5 !important;
+  font-weight: 700 !important;
+}
+
+.result {
+  text-align: center;
+}
+
+.result .cho {
+  margin-top: 5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: green;
+}
