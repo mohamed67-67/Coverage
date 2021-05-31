@@ -20,9 +20,7 @@ let thechosen = new Set();
 function App() {
 
   
-  // const Location = useLocation();
-  // console.log(Location);
-
+  
   return(
     <Fragment>
       <Provider store={Store} >

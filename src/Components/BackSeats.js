@@ -6,11 +6,7 @@ import { useSelector } from 'react-redux'
 
 function BackSeats({thechosen}) {
 
-    // const variants = {
-    //     initial : { x : '100vw', opacity : 0 },
-    //     animate : {x : 0, opacity: 1, transition :  {delay: 0.5,  type: "spring"}},
-    //     exit : {x: '-100vw', transition : { ease : 'easeInOut'}}
-    //   }
+    
 
     const variants = {
         animate : {x: 0, opacity : 1, transition: {duration: 1.2}},

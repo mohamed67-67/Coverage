@@ -47,16 +47,5 @@ function FrontLeft({thechosen}) {
     )
 }
 
-const mapStateToProps = (state) =>{
-    return{
-        seats : state.SRFromStore
-    }
-}
-
-// const mpaDispatchToProps = (dispatch) => {
-//     return {
-//         action : (alo) => dispatch( Choose(alo))
-//     }
-// }
 
 export default  FrontLeft
